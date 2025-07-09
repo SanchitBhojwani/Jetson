@@ -1,4 +1,7 @@
-FROM nvidia/cuda:11.8.0-devel-ubuntu22.04
+# FROM nvidia/cuda:11.8.0-devel-ubuntu22.04
+FROM arm64v8/ubuntu:22.04 
+# but does not have any jetpack (above)
+# FROM nvcr.io/nvidia/l4t-jetpack:r36.2.0 not supported on jetson nano
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV LANG C.UTF-8
